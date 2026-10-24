@@ -1,0 +1,158 @@
+:root {
+  --screen: #f7fbfa;
+  --surface: #ffffff;
+  --soft: #e7f4f2;
+  --ink: #11302d;
+  --muted: #5d7774;
+  --line: #dcebe8;
+  --deep: #1f6f6a;
+  --on-deep: #ffffff;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --screen: #0d1c1b;
+    --surface: #132826;
+    --soft: #17322f;
+    --ink: #e3f2f0;
+    --muted: #8eaaa7;
+    --line: #22403d;
+    --deep: #74d3c9;
+    --on-deep: #062421;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--screen);
+  color: var(--ink);
+  font-family: 'Onest', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+h1 {
+  font-size: clamp(30px, 6vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 40px 0 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 24px 0 4px;
+}
+
+p,
+li {
+  color: var(--ink);
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+a {
+  color: var(--deep);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.note {
+  background: var(--soft);
+  border-radius: 18px;
+  padding: 18px;
+  margin: 24px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+code {
+  font-size: 0.85em;
+  word-break: break-all;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+}

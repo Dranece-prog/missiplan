@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confidentialité · Missiplan</title>
+    <meta
+      name="description"
+      content="Quelles données Missiplan utilise, où elles sont enregistrées et comment les supprimer." />
+    <link rel="icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="./"><img class="logo" src="logo.svg" alt="" />Missiplan</a>
+      </header>
+
+      <h1>Règle de confidentialité</h1>
+      <p class="muted">Dernière mise à jour : 23 octobre 2026</p>
+
+      <p>
+        Missiplan (anciennement Kolibri) est une application Android éditée par Dranece (« nous »). Cette page explique quelles données
+        l’application utilise, où elles sont enregistrées et comment les supprimer.
+      </p>
+
+      <div class="note">
+        <strong>En résumé :</strong> vos données sont enregistrées sur votre téléphone, et dans votre propre compte
+        Google si vous le connectez. Missiplan n’a pas de serveur : nous n’avons accès à aucune de vos données. Il n’y a
+        ni publicité, ni statistiques d’utilisation, ni revente ou partage de données.
+      </div>
+
+      <h2>1. Les données que vous saisissez</h2>
+      <p>Pour fonctionner, Missiplan enregistre ce que vous y saisissez :</p>
+      <ul>
+        <li>vos missions : date, horaires, établissement, étape du suivi, montants estimés et payés ;</li>
+        <li>
+          les établissements : nom, mode de rémunération, taux horaire, distance, délai de paiement, contact et notes ;
+        </li>
+        <li>vos frais : date, montant, catégorie, libellé ;</li>
+        <li>
+          les documents que vous ajoutez : photos prises avec l’appareil photo ou fichiers choisis sur le téléphone
+          (contrats, fiches de paie, factures, reçus) ;
+        </li>
+        <li>vos réglages, par exemple la puissance fiscale de votre véhicule.</li>
+      </ul>
+      <p>
+        Ces données sont enregistrées <strong>uniquement sur votre téléphone</strong>, dans l’espace réservé à
+        l’application. Elles ne nous sont jamais envoyées.
+      </p>
+
+      <h2>2. Les autorisations du téléphone</h2>
+      <ul>
+        <li>
+          <strong>Appareil photo</strong> : seulement quand vous choisissez de photographier un document. Les photos
+          restent dans Missiplan.
+        </li>
+        <li>
+          <strong>Agenda</strong> : seulement si vous l’autorisez. Missiplan utilise l’agenda du téléphone, qui regroupe
+          Google Agenda et les autres comptes que vous y avez ajoutés : il affiche la liste de vos agendas pour que vous
+          choisissiez celui de vos missions ; quand vous ouvrez « Importer depuis l’agenda », il affiche les événements
+          des 30 prochains jours pour que vous choisissiez lesquels deviennent des missions ; et, seulement si vous
+          activez « Ajouter mes missions à l’agenda », il crée un événement pour chaque mission saisie dans Missiplan, le
+          met à jour si vous modifiez la mission et le supprime si vous la supprimez. Une mission importée reste liée à
+          son événement : si vous changez son horaire dans Missiplan, Missiplan change seulement la date et les heures de
+          l’événement (jamais son titre ni ses notes), et il ne le supprime qu’avec votre accord. À l’inverse, si vous
+          déplacez l’événement dans votre agenda, la mission suit. Missiplan ne touche à aucun autre événement. Ces
+          changements sont ensuite synchronisés par le téléphone avec votre compte d’agenda, comme tout événement saisi
+          sur le téléphone.
+        </li>
+        <li>
+          <strong>Notifications</strong> : seulement si vous activez les rappels. Ils sont programmés sur le téléphone,
+          sans aucun serveur.
+        </li>
+      </ul>
+
+      <h2>3. Votre compte Google (facultatif)</h2>
+      <p>
+        Vous pouvez utiliser Missiplan sans compte Google. Si vous le connectez, l’application échange directement avec
+        votre compte Google, depuis votre téléphone. Ces données ne transitent par aucun serveur de Missiplan et nous n’y
+        avons pas accès. Voici exactement ce qui est demandé, et pourquoi :
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Accès demandé</th>
+            <th>Utilisation par Missiplan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nom et adresse e-mail du compte</td>
+            <td>Afficher le compte connecté dans les réglages.</td>
+          </tr>
+          <tr>
+            <td>Google Drive, fichiers créés par Missiplan<br /><code>drive.file</code></td>
+            <td>
+              Ranger une copie de vos documents dans un dossier « Missiplan » de votre Drive, et les récupérer sur un
+              autre téléphone. Missiplan ne voit pas les autres fichiers de votre Drive.
+            </td>
+          </tr>
+          <tr>
+            <td>Google Drive, dossier caché de l’application<br /><code>drive.appdata</code></td>
+            <td>
+              Enregistrer une copie de sauvegarde de vos données (missions, établissements, frais, liste des documents)
+              pour les retrouver si vous changez de téléphone. Ce dossier n’est lisible que par Missiplan.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        L’utilisation et le transfert vers toute autre application des informations reçues des API Google respectent la
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" lang="en"
+          >Google API Services User Data Policy</a
+        >, y compris les exigences d’utilisation limitée (« Limited Use »). Les données Google ne servent qu’aux
+        fonctions décrites ci-dessus. Elles ne sont ni vendues, ni utilisées pour de la publicité, ni lues par des
+        personnes, ni utilisées pour entraîner des modèles d’intelligence artificielle.
+      </p>
+
+      <h2>4. Partage des données</h2>
+      <p>
+        Nous ne partageons, ne vendons et ne transmettons vos données à personne. Les seuls échanges sont ceux entre
+        votre téléphone et votre propre compte Google, décrits ci-dessus, et seulement si vous le connectez. Les liens
+        des fiches « Les règles, simplement » ouvrent des sites officiels dans votre navigateur, qui ont leurs propres
+        règles de confidentialité.
+      </p>
+
+      <h2>5. Conservation et suppression</h2>
+      <ul>
+        <li>
+          <strong>Sur le téléphone</strong> : vous pouvez supprimer une mission, un frais ou un document à tout moment.
+          Désinstaller Missiplan efface toutes ses données du téléphone.
+        </li>
+        <li>
+          <strong>Dans Google Drive</strong> : supprimez le dossier « Missiplan » pour effacer vos documents. Pour effacer
+          la sauvegarde cachée, ouvrez Google Drive sur un ordinateur, puis Paramètres → Gérer les applications →
+          Missiplan → Supprimer les données d’application cachées.
+        </li>
+        <li>
+          <strong>Dans votre agenda</strong> : les événements créés par Missiplan sont des événements ordinaires que vous
+          pouvez supprimer. Vous pouvez aussi retirer à Missiplan l’accès à l’agenda dans les réglages du téléphone.
+        </li>
+        <li>
+          <strong>Retirer l’accès</strong> : « Se déconnecter » dans les réglages de Missiplan, puis, pour révoquer
+          entièrement l’accès, rendez-vous sur
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+        </li>
+      </ul>
+
+      <h2>6. Vos droits</h2>
+      <p>
+        Comme nous ne détenons aucune de vos données, vous gardez la maîtrise complète de ce qui est enregistré :
+        consulter, corriger et supprimer se font directement dans l’application, dans votre Google Drive et dans votre
+        agenda. Pour toute question sur cette règle ou sur vos droits au titre du RGPD, écrivez-nous à
+        <a href="mailto:dranece2+contact@gmail.com">dranece2+contact@gmail.com</a>. Vous pouvez aussi adresser une
+        réclamation à la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).
+      </p>
+
+      <h2>7. Enfants</h2>
+      <p>Missiplan s’adresse aux professionnels de santé. Elle n’est pas destinée aux enfants.</p>
+
+      <h2>8. Modifications</h2>
+      <p>
+        Si cette règle change, la nouvelle version est publiée sur cette page avec sa date. Si un changement concerne
+        les données Google, l’application vous en informera avant de les utiliser autrement.
+      </p>
+
+      <footer>
+        <p>
+          Missiplan · Dranece · <a href="mailto:dranece2+contact@gmail.com">dranece2+contact@gmail.com</a><br />
+          <a href="./">Accueil</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
