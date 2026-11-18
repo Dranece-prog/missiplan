@@ -20,7 +20,7 @@
       </header>
 
       <h1>Règle de confidentialité</h1>
-      <p class="muted">Dernière mise à jour : 5 novembre 2026</p>
+      <p class="muted">Dernière mise à jour : 17 novembre 2026</p>
 
       <p>
         Missiplan (anciennement Kolibri) est une application Android éditée par Dranece (« nous »). Cette page explique quelles données
@@ -36,20 +36,37 @@
       <h2>1. Les données que vous saisissez</h2>
       <p>Pour fonctionner, Missiplan enregistre ce que vous y saisissez :</p>
       <ul>
-        <li>vos missions : date, horaires, établissement, étape du suivi, montants estimés et payés ;</li>
         <li>
-          les établissements : nom, mode de rémunération, taux horaire, distance, délai de paiement, contact et notes ;
+          vos missions : date, horaires, établissement ou agence, lieu de la mission, étape du suivi, montants estimés
+          et payés, numéro de contrat ;
         </li>
+        <li>
+          les établissements et agences : nom, mode de rémunération, taux horaire, adresse, distance, délai de paiement,
+          contact, adresse e-mail et notes ;
+        </li>
+        <li>vos fiches de paie : date de paiement, brut, net imposable, impôt prélevé, net payé, heures payées ;</li>
         <li>vos frais : date, montant, catégorie, libellé ;</li>
         <li>
           les documents que vous ajoutez : photos prises avec l’appareil photo ou fichiers choisis sur le téléphone
           (contrats, fiches de paie, factures, reçus) ;
+        </li>
+        <li>
+          « Mes documents » : les pièces que vous choisissez d’y ranger (diplômes, attestations, vaccinations, pièce
+          d’identité, carte Vitale, RIB, CV…), avec leurs dates de validité, et la liste des documents que vous avez
+          transmis à chaque établissement ou agence ;
         </li>
         <li>vos réglages, par exemple la puissance fiscale de votre véhicule.</li>
       </ul>
       <p>
         Ces données sont enregistrées <strong>uniquement sur votre téléphone</strong>, dans l’espace réservé à
         l’application. Elles ne nous sont jamais envoyées.
+      </p>
+      <p>
+        <strong>Lecture des documents.</strong> Quand vous ajoutez une fiche de paie, un contrat, un reçu ou un document
+        de « Mes documents », Missiplan peut lire son texte pour préremplir les montants et les dates. Cette lecture se
+        fait entièrement sur le téléphone, avec un module de reconnaissance de texte intégré à l’application (ML Kit, de
+        Google) : ni l’image ni le texte ne quittent le téléphone, et l’envoi de statistiques d’utilisation prévu par ce
+        module est désactivé dans Missiplan.
       </p>
 
       <h2>2. Les autorisations du téléphone</h2>
@@ -108,8 +125,8 @@
           <tr>
             <td>Google Drive, dossier caché de l’application<br /><code>drive.appdata</code></td>
             <td>
-              Enregistrer une copie de sauvegarde de vos données (missions, établissements, frais, liste des documents)
-              pour les retrouver si vous changez de téléphone. Ce dossier n’est lisible que par Missiplan.
+              Enregistrer une copie de sauvegarde de vos données (missions, établissements, fiches de paie, frais,
+              « Mes documents », liste des documents) pour les retrouver si vous changez de téléphone. Ce dossier n’est lisible que par Missiplan.
             </td>
           </tr>
         </tbody>
@@ -130,11 +147,17 @@
         de la FAQ ouvrent des sites officiels dans votre navigateur, qui ont leurs propres
         règles de confidentialité.
       </p>
+      <p>
+        <strong>Envoi de documents à une agence.</strong> Quand vous choisissez « Envoyer à une agence », Missiplan
+        ouvre la messagerie de votre téléphone avec les documents choisis en pièces jointes. C’est vous qui choisissez le
+        destinataire, relisez et envoyez le message, depuis votre propre adresse : Missiplan n’envoie rien lui-même. Il
+        note seulement, si vous le confirmez, quels documents ont été transmis et à qui.
+      </p>
 
       <h2>5. Conservation et suppression</h2>
       <ul>
         <li>
-          <strong>Sur le téléphone</strong> : vous pouvez supprimer une mission, un frais ou un document à tout moment.
+          <strong>Sur le téléphone</strong> : vous pouvez supprimer une mission, une fiche de paie, un frais ou un document à tout moment.
           Désinstaller Missiplan efface toutes ses données du téléphone.
         </li>
         <li>
